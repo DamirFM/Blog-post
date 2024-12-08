@@ -31,9 +31,8 @@ Make sure you have a running instance of MongoDB. Update the connection URL in t
 
 ### 1. Clone the Repository
 
-bash
-git clone <git@github.com:DamirFM/Blog-post.git>
-cd <blog-post folder>
+- git clone "git@github.com:DamirFM/Blog-post.git"
+- cd "blog-post" folder
 
 ### 2. Run the backend
 
@@ -53,4 +52,22 @@ Next.js runs on http://localhost:3001
 
 ## Screenshots
 
+### Home Page
+
 ![Home Page](/screenshots/home.png)
+
+### Edit Page
+
+![Home Page](/screenshots/edit.png)
+
+### Insomnia GET
+
+![Home Page](/screenshots/get.png)
+
+### Insomnia POST
+
+![Home Page](/screenshots/post.png)
+
+### Insomnia PUT
+
+![Home Page](/screenshots/put.png)
