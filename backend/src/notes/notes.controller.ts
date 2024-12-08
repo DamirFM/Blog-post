@@ -15,6 +15,12 @@ export class NotesController {
     return this.notesService.findAll();
   }
 
+  // NEW ROUTE
+  @Get(':id')
+  findOne(@Param('id') id: string) {
+    return this.notesService.findOne(id);
+  }
+
   @Put(':id')
   update(@Param('id') id: string, @Body() body) {
     return this.notesService.update(id, body);

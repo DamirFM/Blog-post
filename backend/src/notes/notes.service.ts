@@ -27,6 +27,18 @@ export class NotesService {
     };
   }
 
+  // NEW METHOD
+  async findOne(id: string) {
+    const note = await this.noteModel.findById(id).exec();
+    if (!note) {
+      return { message: 'Note not found' };
+    }
+    return {
+      message: 'Note retrieved successfully',
+      note,
+    };
+  }
+
   async update(id: string, noteData: Partial<Note>) {
     const updatedNote = await this.noteModel.findByIdAndUpdate(id, noteData, {
       new: true,
